@@ -34,7 +34,7 @@
     <label for="kerf">切割道寬： <span id="kerfLabel">0.5 mm</span></label>
     <input type="range" id="kerf" min="0" max="4" step="1" value="1">
 
-    <label for="dieSize">晶片邊長： <span id="dieLabel">40 mm</span></label>
+    <label for="dieSize">晶片邊長： <span id="dieLabel">30 mm</span></label>
     <input type="range" id="dieSize" min="0" max="4" step="1" value="4">
 
     <label for="wafer">晶圓直徑： <span id="waferLabel">6吋 (150 mm)</span></label>
@@ -64,7 +64,7 @@ const baseWafer=300;
 const waferOptions=[150,200,300]; // mm (6吋, 8吋, 12吋)
 const waferLabels=["6吋 (150 mm)","8吋 (200 mm)","12吋 (300 mm)"];
 const kerfOptions=[0,0.5,1,1.5,2];
-const dieOptions=[10,14,20,28,40]; // 晶片邊長
+const dieOptions=[7,11,15,23,30]; // 晶片邊長
 
 let diePositions=[]; // 儲存每個晶片的座標，用來標記損壞
 
