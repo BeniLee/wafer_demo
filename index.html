@@ -22,6 +22,26 @@
   </style>
 </head>
 <body>
+  <body>
+  <script>
+    var password = "9527"; // 在這裡設定你的密碼
+    var passwordInput = prompt("請輸入密碼以存取此頁面：");
+
+    if (passwordInput === password) {
+        // 如果密碼正確，顯示頁面內容
+        document.body.style.display = "block";
+    } else {
+        // 如果密碼錯誤，隱藏頁面或導向錯誤頁面
+        alert("密碼錯誤，無法存取。");
+        window.location.href = "about:blank"; // 導向空白頁面
+    }
+</script>
+
+<style>
+    body {
+        display: none; /* 預設先隱藏頁面內容 */
+    }
+</style>
 <header>
   <h1><i class="bi bi-cpu"></i> 晶圓覆蓋率模擬器 ✨</h1>
   <p>晶圓大小會依照 12 吋基準縮小顯示，並可模擬損壞晶片</p>
